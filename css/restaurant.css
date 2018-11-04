@@ -7,7 +7,7 @@
     }
 }
 
-@media  (max-width: 600px) {
+@media  (max-width: 800px) {
 
     .inside{
         display: flex;
@@ -33,20 +33,28 @@
     header #breadcrumb {
         order:1;
         width: 100px;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
     }
 
     .inside #map-container {
         order: 2;
         position: relative;
+        top:130px;
         height: 300px;
         width: 100%;
     }
 
     .inside #restaurant-container {
         width: 100%; 
+        position: relative;
+        padding: 140px 5px 0 0;
+        margin: auto;
+        text-align: center;
     }
 
-    .inside #review-container {
+    .inside #reviews-container {
         width: 100%;
         padding: 5px;
         margin: auto;
@@ -55,6 +63,25 @@
     .inside footer {
         order: 4;
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10px;
+    }
+
+    #reviews-list {
+        width: 100px;
+    }
+
+    #reviews-list li {
+        width: 400%;
+    }
+
+    #reviews-container h2{
+        text-align: center;
+    }
+
+    #restaurant-cuisine {
+        margin: auto;
     }
 
 
