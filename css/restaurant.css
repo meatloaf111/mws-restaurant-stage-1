@@ -9,6 +9,11 @@
 
 @media  (max-width: 800px) {
 
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .inside{
         display: flex;
         flex-direction: row;
