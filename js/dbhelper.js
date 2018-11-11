@@ -156,7 +156,7 @@ class DBHelper {
     /**
     return (`/img/${restaurant.photograph}`);
      */
-    return (`mws-restaurant-stage-1/img/${restaurant.photograph}`);
+    return (`/mws-restaurant-stage-1/img/${restaurant.photograph}`);
   }
 
   /**
