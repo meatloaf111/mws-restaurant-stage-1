@@ -2,6 +2,7 @@ var staticCacheName = 'restaurant-cahce-1';
 
 let urlToCache = [
     '/',
+    '/index.html',
     '/restaurant.html',
     '/css/styles.css',
     '/data/restaurants.json',
@@ -17,7 +18,7 @@ let urlToCache = [
     '/img/10.jpg',
     '/js/main.js',
     '/js/restaurant_info.js',
-    '/js/dbhelper.js',
+    '/js/dbhelper.js'
 
 ];
 self.addEventListener('install', function (event) {
@@ -28,7 +29,7 @@ self.addEventListener('install', function (event) {
             return cache.addAll(urlToCache);
 
         }).catch(erroe => {
-            console.log(erroe);
+            console.log(error);
         })
     );
 });
