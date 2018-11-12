@@ -75,7 +75,7 @@ self.addEventListener('fetch', function(event) {
               // 2つの Stream があるようにする
               var responseToCache = response.clone();
   
-              caches.open(CACHE_NAME)
+              caches.open(staticCacheName)
                 .then(function(cache) {
                   cache.put(event.request, responseToCache);
                 });
