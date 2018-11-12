@@ -177,11 +177,11 @@ createRestaurantHTML = (restaurant) => {
   li.append(address);
 
   const more = document.createElement('a');
+  const alabel ='View details of the restaurant ' + restaurant.name;
   more.innerHTML = 'View Details';
+  more.setAttribute('aria-label',alabel);
   more.href = DBHelper.urlForRestaurant(restaurant);
   more.tabIndex = '2';
-  const alabel ='View details of the restaurant ' + restaurant.name;
-  more.setAttribute('aria-label',alabel);
   li.append(more)
 
   return li
